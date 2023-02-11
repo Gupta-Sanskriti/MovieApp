@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
 
 const useMovieInfo = (param) => {
-    const [currMovie, setCurrMovie] = useState({});
-    console.log(param)
+    const [currMovie, setCurrMovie] = useState([]);
+    // console.log(param)
 
     useEffect(()=>{
         getMovieInfo()

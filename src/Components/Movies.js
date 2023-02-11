@@ -1,20 +1,11 @@
-import { useState, useEffect } from "react";
 import {Link} from 'react-router-dom';
 import ShowCard from "./ShowCard";
 import Shimmer from "./Shimmer";
+import useAllMovies from "../utils/useAllMovies";
 const Movies = () =>{
-    const [shows, setShows] = useState([]);
-    const getAllMovie = async() =>{
-        const data = await fetch('https://api.tvmaze.com/shows');
-        const json = await data.json()
-        setShows(json)
-    }
-    // console.log(shows)
-    useEffect(() =>{
-        getAllMovie()
-    },[])
+    const shows = useAllMovies();
     return(
-        <div className="ml-10 mr-10 text-gray-800 mb-10">
+        <div className="ml-10 mr-10 text-gray-800 mb-10 mt-20">
             <h1 className="text-3xl p-5 text-center">Movies and Shows</h1>
             <div className="md:grid md:grid-cols-3 md:place-content-evenly gap-5 p-10 shadow rounded-2xl m-0">
                 {shows.length === 0? (<Shimmer/>) : (

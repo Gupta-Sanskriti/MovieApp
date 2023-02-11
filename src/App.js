@@ -4,7 +4,7 @@ import Footer from './Components/Footer';
 
 const App = () =>{
     return(
-        <div className="">
+        <div className="font-extralight font-sans">
             <Navbar/>
             <Outlet/>
             <Footer/>

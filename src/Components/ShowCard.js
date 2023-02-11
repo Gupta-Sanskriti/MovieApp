@@ -1,6 +1,6 @@
 const ShowCard = (props) => {
     const {id, image,genres, name , language, premiered} = props.props;
-    console.log(props)
+    // console.log(props)
     return(
         <div className="flex gap-5 ">
             <img src={image?.original} alt={name} height="100px" width="100px" className="rounded"/>
