@@ -20,11 +20,14 @@ const MovieCard = () => {
     // console.log(filteredSeason)
     setEpisode(filteredSeason)
   }
+      // console.log(episodesInfo)
+
 
   // function onlyUnique
   const uniqueSeason = new Set(episodesInfo.map((epi)=>{
     return epi.season
   }));
+  console.log(uniqueSeason)
   const seasonArray = [...uniqueSeason]
 
   return (
@@ -79,9 +82,9 @@ const MovieCard = () => {
       <h1 className="text-3xl mb-5">Episodes</h1>
         <div className="">
           <div className="">
-            <div className="flex">
+            <div className="flex flex-wrap justify-between">
               {seasonArray.map((count)=>(
-                <button key={count} onClick={()=>{filterSeason(count)}} className="bg-gray-700 hover:bg-slate-800 p-2 rounded mr-5 text-white">Season {count} </button>
+                <button key={count} onClick={()=>{filterSeason(count)}} className="bg-gray-700 hover:bg-slate-800 p-2 rounded mr-5 mb-5 text-white">Season {count} </button>
               ))}
               {/* <li onClick={()=>{filterSeason('2')}} className="bg-gray-700 hover:bg-slate-800 p-2 rounded mr-5 text-white">Season 2</li> */}
             </div>

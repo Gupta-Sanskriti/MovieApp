@@ -5,12 +5,23 @@ const Body = () =>{
 
     const shows = useAllMovies();
 
-    const unique = new Set(shows.map((show)=>{
+    // console.log(shows)
+    const unique = shows.map((show)=>{
+        // console.log(show)
         return show
-    }))
+        // return show.genres.map((it)=>console.log(it))
+        // return ([...show?.genres])
+    }).map((i)=> console.log(i))
+    
+    console.log(unique)
+    // const uniqueShows= [...unique]
+    // console.log(uniqueShows)
 
-    const uniqueShows= [...unique]
-    console.log(uniqueShows)
+    // const showtime = new Set(uniqueShows.map((i)=>{
+    //     return i
+    // }))
+
+    // console.log(showtime)
     
     return(
         <div className="">
@@ -18,7 +29,7 @@ const Body = () =>{
                 <div className=" bg-black/60 h-[100vh] ">
                     <div className="flex flex-col place-content-center ">
                         <div className="p-[15.5rem] font-extralight font-sans">
-                            <h1 className="text-6xl font-bold text-white">It's your</h1>
+                            <h1 className="text-6xl font-bold text-white"></h1>
                             <h2 className="text-9xl  text-gray-100 pb-2">MovieApp</h2>
                             <p className="text-2xl text-justify tracking-widest">
                             Watch your favourite movie anytime anywhere !!!
@@ -27,9 +38,9 @@ const Body = () =>{
                     </div>
                 </div>
             </div>
-            <div className="px-10">
+            {/* <div className="px-10">
                 Genres
-            </div>
+            </div> */}
         </div>
     )
 }

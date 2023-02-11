@@ -3,7 +3,7 @@ import {FaUserCircle} from 'react-icons/fa';
 
 const Profile = ()=>{
     return(
-        <div className=" p-5 pl-10 pr-10 text-gray-800 ">
+        <div className=" p-5 pl-10 pr-10 text-gray-800 mt-20">
             <h1 className="text-3xl pb-5 flex justify-center">Profile</h1>
             <div className="grid  place-content-center shadow rounded-2xl bg-slate-100 p-5 lg:w-72 lg:m-auto">
                 <FaUserCircle className='flex justify-center w-auto text-9xl m-5 mb-2 '/>
