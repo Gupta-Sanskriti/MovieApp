@@ -1,7 +1,8 @@
 import { AiFillHome } from 'react-icons/ai';
 import {MdMovie} from 'react-icons/md';
 import {FaUserCircle} from 'react-icons/fa';
-import {BiSearchAlt2} from 'react-icons/bi'
+import {BiSearchAlt2} from 'react-icons/bi';
+import {BsFillBookmarkHeartFill} from 'react-icons/bs'
 import {Link} from 'react-router-dom'
 
 const Navbar = () =>{
@@ -12,6 +13,7 @@ const Navbar = () =>{
                 <Link to="/"><li className='p-2 hover:bg-slate-50 hover:text-gray-800 hover:rounded-lg active:text-gray-800 active:rounded-lg active:bg-slate-50'><AiFillHome/></li></Link>
                 <Link to="/movies"><li className='p-2 hover:bg-slate-50 hover:text-gray-800 hover:rounded-lg'><MdMovie/></li></Link>
                 <Link to="/search"><li className='p-2 hover:bg-slate-50 hover:text-gray-800 hover:rounded-lg'><BiSearchAlt2/></li></Link>
+                <Link to="/bookmarks"><li className='p-2 hover:bg-slate-50 hover:text-gray-800 hover:rounded-lg'><BsFillBookmarkHeartFill/></li></Link>
                 <Link to="/profile"><li className='p-2 hover:bg-slate-50 hover:text-gray-800 hover:rounded-lg'><FaUserCircle/></li></Link>
 
             </ul>

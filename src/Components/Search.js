@@ -27,7 +27,7 @@ const Search = () => {
   const res = suggestion.map((it)=>it.show)
 
   return (
-    <div className='m-10 mt-24 '>
+    <div className='m-10 mt-24 min-h-[37vh]'>
       <div className="text-center text-3xl">Finding Something? you can Search here!! </div>
       {/* search container */}
       <div className="flex justify-center mt-10 mb-10">
