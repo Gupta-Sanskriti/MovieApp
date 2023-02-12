@@ -41,7 +41,7 @@ const Genres = ({ prop }) => {
       <ul>
         <h1 className="text-2xl px-10 font-bold">{prop}</h1>
       </ul>
-      <div className="flex gap-5 py-5 pl-2  overflow-x-scroll  scrollbar-hide">
+      <div className="flex gap-5 py-5 pl-2  overflow-x-scroll scroll-smooth scrollbar-hide">
         {filteredMovied === [] ? (
           <Shimmer />
         ) : (
