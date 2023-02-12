@@ -10,13 +10,13 @@ const bookmarkSlice = createSlice({
         addItem:(state, action )=>{
             state.bookval.push(action.payload)
         },
-        changeBookColor:(state, action)=>{
-            
+        clearBookmark:(state)=>{
+            state.bookval = []
         }
         // removeItem:(state, action)  =>{
         //     state.bookval.map()
         // }
     }
 })
-export const {addItem, changeBookColor} = bookmarkSlice.actions;
+export const {addItem, clearBookmark} = bookmarkSlice.actions;
 export default bookmarkSlice.reducer;
