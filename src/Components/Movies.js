@@ -19,7 +19,7 @@ const Movies = () =>{
     const addToBookmark = (item, id) =>{
         // console.log(item)
         dispath(addItem(item))
-        setBookmarkColor('text-red-500')
+        // setBookmarkColor('text-red-500')
         // dispath(changeBookColor(id))
     }
     // console.log(addToBookmark())
@@ -32,11 +32,11 @@ const Movies = () =>{
                 {shows.length === 0? (<Shimmer/>) : (
                     shows.map((show)=>(
                         <div key={show.id} className="hover:bg-slate-800 hover:text-white hover:rounded-lg shadow-lg p-5 rounded-lg flex">
-                            <Link  to={'/movies/'+show.id} className="">
+                            <Link  to={'/movies/'+show.id} className="mr-10">
                                 <ShowCard props={show}/>
                             </Link>
                             
-                            <BsBookmarkHeart className={bookmarkColor+ " text-3xl"} onClick={()=>{
+                            <BsBookmarkHeart className={bookmarkColor+ " text-[2rem] hover:text-cyan-400 "} onClick={()=>{
                                 addToBookmark(show, show.id) 
                                 
                             }}/>
