@@ -6,7 +6,7 @@ const useMovieInfo = (param) => {
 
     useEffect(()=>{
         getMovieInfo()
-    }, [])
+    }, [currMovie])
 
     const getMovieInfo = async() =>{
         const data = await fetch("https://api.tvmaze.com/shows/"+param)

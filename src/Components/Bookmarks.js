@@ -12,7 +12,7 @@ const Bookmarks = () => {
   return (
     // <></>
     <div className='mt-20 '>
-      <h1 className='text-3xl my-2 p-3 text-center flex justify-center'>Bookmarks <BsFillBookmarkHeartFill className='p-1 m-1'/></h1>
+      <h1 className='text-3xl my-2 p-3 text-center flex justify-center font-bold'>Bookmarks <BsFillBookmarkHeartFill className='p-1 m-1'/></h1>
       <div className="text-xl text-center">BookMarked Item: {bookmarked.length}</div>
       <div className="md:grid md:grid-cols-3 md:place-content-evenly gap-5 p-10 shadow rounded-2xl m-0">
                 {bookmarked.length === 0? (<ShimmerBookmark/>) : (

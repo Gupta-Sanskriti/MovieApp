@@ -31,8 +31,8 @@ const Body = () =>{
                     </div>
                 </div>
             </div>
-            <div className="p-10">
-                <h1 className="text-4xl ">What's for today?</h1>
+            <div className="">
+                <h1 className="text-4xl p-10">What's for today?</h1>
                 <div className="">
                 {uniqueGenre.map((gen)=>(
                     <Genres key={gen} prop={gen} />

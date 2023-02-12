@@ -11,12 +11,12 @@ const ShowCard = (props) => {
         alt={name}
         height="100px"
         width="100px"
-        className="rounded"
+        className="rounded max-h-[10rem] min-h-[9rem]"
         loading="lazy"
       />
-      <div>
+      <div className="overflow-hidden">
         <h1 className="text-2xl">{name}</h1>
-        <p className="text-lg">Genres: {genres?.join(", ")}</p>
+        <p className="text-lg line-clamp-2">Genres: {genres?.join(", ")}</p>
         <p className="text-sm">Language: {language}</p>
         <p className="text-sm">Premiered In : {premiered}</p>
       </div>
