@@ -6,8 +6,8 @@ const Genres = ({ prop }) => {
   const [filteredMovied, setfilteredMovies] = useState(allMovies);
 
   const filteredMoviedAccordingToGenre = allMovies.filter((movAccToGen) => {
-    // if (movAccToGen.genres.includes("Comedy")) return movAccToGen;
-    return movAccToGen
+    if (movAccToGen.genres.includes("Comedy")) return movAccToGen;
+    // return movAccToGen
   });
 //   console.log(filteredMoviedAccordingToGenre);
 

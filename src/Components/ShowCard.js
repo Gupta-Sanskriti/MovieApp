@@ -1,6 +1,6 @@
 
 const ShowCard = (props) => {
-  console.log(props);
+  // console.log(props);
   const { id, image, genres, name, language, premiered } = props.props;
   return (
     <div className="flex gap-5 ">
