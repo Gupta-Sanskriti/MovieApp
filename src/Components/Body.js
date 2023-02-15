@@ -22,7 +22,6 @@ const Body = () =>{
                 <div className=" bg-black/60 h-[100vh] ">
                     <div className="flex flex-col place-content-center ">
                         <div className="p-[15.5rem] font-extralight font-sans">
-                            <h1 className="text-6xl font-bold text-white"></h1>
                             <h2 className="text-9xl  text-cyan-500 pb-2">MovieApp</h2>
                             <p className="text-2xl text-justify tracking-widest">
                             Watch your favourite movie anytime anywhere !!!

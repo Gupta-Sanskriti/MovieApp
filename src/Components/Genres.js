@@ -21,7 +21,7 @@ const Genres = ({ prop }) => {
     // return()=>{
     //   clearTimeout(timer);
     // }
-  },[filteredMovied]);
+  },[allMovies]);
 
   const showFilteredMovies = (genprop) => {
     const filteredMoviedAccordingToGenre = allMovies.filter((movAccToGen) =>

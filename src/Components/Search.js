@@ -13,7 +13,7 @@ const Search = () => {
     const timer = setTimeout(()=>getSearchRes(), 200)
 
     return() =>{
-      clearTimeout()
+      clearTimeout(timer)
     }
     
   },[searchQuery])
