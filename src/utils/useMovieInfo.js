@@ -5,13 +5,13 @@ const useMovieInfo = (param) => {
     // console.log(param)
 
     useEffect(()=>{
-        const timer = setTimeout(()=>getMovieInfo(), 200)
+        // const timer = setTimeout(()=>), 200)
+        getMovieInfo()
+        // return () =>{
+        //     clearTimeout(timer)
+        // }
 
-        return () =>{
-            clearTimeout(timer)
-        }
-
-    }, [currMovie])
+    }, [])
 
     const getMovieInfo = async() =>{
         const data = await fetch("https://api.tvmaze.com/shows/"+param)
