@@ -5,7 +5,12 @@ const useMovieInfo = (param) => {
     // console.log(param)
 
     useEffect(()=>{
-        getMovieInfo()
+        const timer = setTimeout(()=>getMovieInfo(), 200)
+
+        return () =>{
+            clearTimeout(timer)
+        }
+
     }, [currMovie])
 
     const getMovieInfo = async() =>{
